@@ -4,21 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/shadow"
+    android:onClick="btnSaveOnClick"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnresult"
         android:layout_width="112dp"
         android:layout_height="56dp"
-        android:onClick="onClick"
+        android:onClick="btnResultOnClick"
         android:text="RESULT"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="112dp"
+        android:layout_height="56dp"
+        android:onClick="btnSaveOnClick"
+        android:text="SAVE"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
@@ -39,7 +54,7 @@
         app:layout_constraintVertical_bias="0.052" />
 
     <EditText
-        android:id="@+id/phone"
+        android:id="@+id/edtphone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -73,14 +88,14 @@
         android:text="Name"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintEnd_toStartOf="@+id/edtname"
         app:layout_constraintHorizontal_bias="0.556"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.153" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/edtemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -122,18 +137,19 @@
         app:layout_constraintVertical_bias="0.247" />
 
     <Spinner
-        android:id="@+id/dynamic_spinner"
-        android:layout_width="207dp"
-        android:layout_height="68dp"
+        android:id="@+id/spinner"
+        android:layout_width="216dp"
+        android:layout_height="55dp"
+        android:scrollbarSize="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintHorizontal_bias="0.835"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintVertical_bias="0.474" />
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/edtname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
